@@ -1,0 +1,280 @@
+{% extends "base.html" %}
+{% block headTags %}
+<script src="https://kit.fontawesome.com/a2ecd85116.js" crossorigin="anonymous"></script>
+{% endblock headTags %}
+{% block title %}
+Home
+{% endblock title %}
+
+{% block body %}
+<div id="keeper">
+    <div class="abstract">
+        <div class="shadow-lg p-2 mb-5  rounded border border-info w-25 ">
+            <h2 class="text-center">Abstract</h2>
+        </div>
+        <div class="shadow-lg p-2 mb-5   rounded border border-primary">
+            <p>
+                During this pandemic we have already lost many lives, and still count is increasing day by day. And WHO
+                still worries
+                that we are no where near to the end of this pandemic and this is highly likely that it will continue in
+                future for may
+                months . Since we know that in case of COVID-19 there is mild to extreme symptoms of pneumonia and these
+                symptoms become
+                life threatening in the end. The aim of this study is to simplify the process of detecting the COVID-19
+                and pneumonia
+                using the concept called CNN (Convolutional Neural Network).In this we will extract out the features
+                from the images,
+                which will led the foundation for distinguishing between the pneumonia or COVID-19, and then those
+                extracted feature set
+                would pass through the classifier for the prediction . We will propose the highly optimized model , by
+                keeping in mind
+                that we are designing the solution for the mobile and low-end desktop devices with fairly good accuracy,
+                so that
+                everyone can use it , without having hustle of powerful computers to run the model.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Tags for the file  uploading  -->
+
+    <div class="shadow-lg p-2 mb-5  rounded border border-info ">
+        <form action=" /validate" method="POST" enctype="multipart/form-data">
+            <div class="input-group">
+                <input type="file" class="form-control" id="myfile" name="myfile"
+                    aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <button class="btn btn-outline-secondary " type="submit" id="inputGroupFileAddon04"
+                    data-bs-toggle="popover" title="Submit you image to see result">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    <!-- *Crousal would come here -->
+
+    <!-- ____________________________________________________________________________________ -->
+
+
+
+    <!-- ______________________________________________________________________________________________ -->
+
+
+
+
+    <!-- * Footer Part -->
+
+    <div class="bottom">
+        <div class="shadow-lg p-2 mb-5  rounded border border-info w-25 ">
+            <h2 class="text-center">Introduction</h2>
+        </div>
+        <div class="shadow-lg p-2 mb-5   rounded border border-primary">
+            <p>Now-a-days deep learning models has developed the accuracy same as human-level and even better in few
+                areas in analyzing
+                and segmenting the image. This is only because of there ability to abstract out the feature set from the
+                images . The
+                medical field is one of most prominent fields which can take the help of this technology to detect the
+                various fazes of
+                the diseases and though the images. Not only this , deep learning can be use in various fields also
+                like, using computer
+                systems for diagnosing , analyzing the health related data of any living organism according to the demo
+                graph. The
+                central part of this state of the art technology is based on it’s ability to teach it’s neural network
+                to learn high
+                level details from the input raw image data though following the general procedure of learning.</p>
+            <div class="shadow-lg p-2 mb-5   rounded border border-primary">
+
+                Although, there have been the major advancement to this technology still this technology cannot replace
+                the human
+                counter parts completely like doctors in our case of diagnosing theses lung diseases , but since it has
+                proven it’s
+                ability to analyze the raw image data in past , we can use this ability to provide human experts from
+                the medical or
+                non-medical domain in performing the time taking tasks like examining the chest X-Ray for figuring out
+                pneumonia or
+                COVID.
+                We know that pneumonia and COVID both effects the lungs. Pneumonia is also happen because of
+                inflammation of the lungs,
+                where water start residing inside the lungs and it can be caused by bacteria, viruses and fungi. And
+                this become so
+                common now-a-days that it can occur to anyone , infants ,young people and elder people. And this also
+                found in very
+                early stages of COVID. People having lungs diseases like asthma and those who took cigarettes get to see
+                even worse
+                version of this disease .</div>
+
+            <div class="shadow-lg p-2 mb-5   rounded border border-primary">
+                And people who has hospitalized having symptom of these urgently required
+                ventilator in case
+                of severity. And infants and elder people having above 60 years are even more susceptible from this
+                disease. And COVID
+                has developed the ability to halt the immune system of host and mostly patient have found dead because
+                of the organ
+                failure in the case of COVID . Therefore , there is must our high priority to facilitate the research in
+                this direction
+                to develop new methods with the help of computer-aided systems to detection and diagnosis of there
+                symptoms in very
+                early stages so that preventive measure could be taken against it.
+                WHO has done the compressive research on the age group of the people who got died due to pneumonia in
+                2017 in all around
+                world and in that 15% were below 5 years and there numbers were 808,000 . And we know till now over
+                2.5million people
+                have died because of the COVID19 and the number is still increasing day by day . And it is also found
+                that due to
+                pneumonia more then 90% deaths were in the underdeveloped nations having limited to very few medical
+                resources.
+            </div>
+            <div class="shadow-lg p-2 mb-5   rounded border border-primary">
+                Therefore there must be very cheap and reliable solution to be developed for diagnosing these diseases .
+                In last five years , there have been various reaches has been facilitated by governments of countries
+                for proposing the
+                different artificial intelligence(AI)-based solutions for different medical problems. And Convolutional
+                Neural Networks
+                (CNNs) have given the prominent results to the researchers which attracts more institutions to
+                facilitate research using
+                this technology. Currently this technology have strongly proven itself in medical problems like breast
+                cancer detection,
+                detection of brain tumor and segmentation, diseases that can be classified through X-ray images etc.
+                Apart from proving it’s ability to perform better in image data , CNNs also recognizes and very well
+                known to handling
+                the large dataset to teaching efficiently. However , it is also found that most of the time this
+                approach fails on a
+                small datasets if they are not properly feed to the network. So to meet the network requirements to
+                provide the quality
+                data. We have took an another approach , in that we have generated new data from the previous data ,
+                through
+                augmentation. And then feed those data to network so it can be train to form generalize architecture so,
+                that it can
+                work well on any new dataset. So we have worked on this research because we want to propose the novel
+                solution using
+                CNNs , which is not too complex and works fairly well in low-end devices. That’s why we went for
+                figuring out the
+                lightweight network architecture which could have accuracy over 95%.
+                And I want to remind that this research was not to replace the human doctor experts , it just designed
+                by keeping in
+                mind that it will do time consuming task for them, so that they can utilize there time on important
+                things.
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="shadow-lg p-2 mb-5  rounded border border-info  row">
+        <h2 class="text-center">Methods</h2>
+
+        <div class="card col-sm w-25" style="width: 18rem;background-color: rgb(247, 221, 199);">
+            <div class="card-body" style="padding: 15px; text-align: center;">
+                <h5 class="card-title">Outline of Methodology</h5>
+                <p class="card-text">Our proposed methodology is shown in Figure 1. It consist of following stacked
+                    layers components : Image Preprocessing ,
+                    Data Augmentation , Convolutional Neural Network(CNNs) , Classifier. These steps are thoroughly
+                    explained in elaborated
+                    way in the subsequent sections beneath it.
+                </p>
+            </div>
+        </div>
+
+        <div class="card col-sm w-25" style="width: 18rem;background-color: rgb(247, 221, 199); margin-left: 15px;">
+            <div class="card-body" style="padding: 15px; text-align: center;">
+                <h5 class="card-title">Data Pre-Processing and Augmentation Layer</h5>
+                <p class="card-text">As we know that to train the more generalized model so that it can perform very
+                    well on new data we have to provide very
+                    large dataset to the model. Since availability of the data is limited and our goal is to make model
+                    more generalized we
+                    have introduced the preprocessing and augmentation layer before feeding the data to the model. And
+                    since CNNs are very
+                    prone to overfitting and this can lead to misleading results to new data, So we have used , Radom
+                    Horizontal Flip ( so
+                    that model could be trained to work well for either side of the X-Ray image),Radom Sized Crop ( to
+                    make model to
+                    understand the information in generalized instead of the information abstracted to only particular
+                    are patch of the
+                    image) , and in the end we have change the intensity of the image at very different levels randomly
+                    ( to make model
+                    understand data even in case of very abstract intensity). And since our image were fairly large size
+                    256x256 which could
+                    be performance intensive for mobile devices, Remember our goal was to create model which is fast and
+                    accurate . So we
+                    have preprocessed the size of the image and made it 128x128 which made it 4 times faster to process
+                    and fairly accurate
+                    size to get feature abstracted out by our model without declining the accuracy of the model .
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="shadow-lg p-2 mb-5  rounded border border-info  row">
+        <div class="card w-100" style="width: 18rem;background-color: rgb(247, 221, 199); margin-left: 15px;">
+            <div class="card-body" style="padding: 15px; text-align: center;">
+                <h5 class="card-title">Customized Convolutional Neural Network</h5>
+                <p class="card-text">Currently, most of the computer vision technology uses Convolutional Neural
+                    Networks(CNNs) for there analysis of
+                    features from raw image or video data . And researchers over the past as shown great trust over this
+                    approach instead of
+                    traditional Back Propagation Neural Networks , because CNNs has designed in such a way that there
+                    explicit assumption of
+                    any input data will be in matrix form which is same as the dimension of image data. If we inspect
+                    the stack of
+                    convolutional layers we would found that in very beginning this network process an raw image data
+                    and detect the very
+                    low-level features form the image. Low level features in the images are : edges, curves and the
+                    separation boundaries
+                    .And these networks are very well in detecting the spatial information from the image and since we
+                    want that our model
+                    to be more generic we did augmentation as explained in section 2.2 , so that our model just not only
+                    use those spatial
+                    information for particular patch of the image despite it can use those information to generalize any
+                    part of the image.
+                    AND the CNNs are able to capture the spatial information from the image and combine them to first
+                    extract out the
+                    low-level features from the image and then use those features to abstract out the more higher level
+                    of the features
+                    which are major component for distinguishing and predicting the type of image and all these things
+                    able to happen
+                    because of filters. And unlike normal feed forward network these filters have very less parameters
+                    to work upon and also
+                    uses technique to share the weights among the filters which make them efficient and reduce the
+                    computation efforts. And
+                    these filters are the learnable parameters for each layers which convolve in width and height of the
+                    image to train
+                    itself through the optimizer.
+
+                    And the another important part of Convolutional Neural Networks (CNNs) are activation layers. These
+                    layers are used to
+                    map input to output. And it also use to approximate any nonlinear function to it’s output.
+                    Pooling layers is also one component of the CNNs , it helps to reduce the size to data volume so
+                    that information that
+                    is most desirable to make prediction will only pass through it , which not only make our model fast
+                    but also less prone
+                    to nosy information since they will cornered out by the dominant pixels or the common
+                    characteristics of the neighboring
+                    pixels. And it there is common practice to when and where to use pooling layers, we should always
+                    use polling layer
+                    between two convolutional layers. And the most common polling layer to use is max pooling layers,
+                    this pooling layer
+                    selects that pixel or data which has highest value in the given window size. And another is average
+                    pooling layer ,it
+                    will select the average of all data in given window. And since our goal is to design the model which
+                    not only accurate
+                    in prediction but also less computer expensive so that we can use it in our personal devices easily
+                    , without need of
+                    high-end computers .
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    {% endblock body %}
+    {% block belowBodyTags %}
+    <script src="{{ url_for('static', filename='js/temp1.js') }}"></script>
+    <link href="{{ url_for('static', filename='css/design.css' ) }}" rel="stylesheet">
+    {% endblock belowBodyTags %}

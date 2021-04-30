@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block headTags %}
+<script src="https://kit.fontawesome.com/a2ecd85116.js" crossorigin="anonymous"></script>
+{% endblock headTags %}
+{% block title %}
+Home
+{% endblock title %}
+
+{% block body %}
+<div class="keeper" style="padding: 40px;">
+
+    <div class="shadow-lg p-2 mb-5  rounded border border-info w-50 " style="padding:15px;position:relative;">
+        <img src="{{img_path}}" class="rounded  d-block" style="width: 400px;height : 400px;">
+        <div class="card col-sm w-25 shadow-lg"
+            style="width: 18rem;background-color: rgb(247, 221, 199);position:absolute;top: 100px;right:50px;padding:10px;text-align: center;">
+            Your Test Result
+
+            {% if result_data == 'COVID' %}
+
+            <div class="card col-sm" style="background-color: rgba(218, 117, 100, 0.87);"> COVID-19
+            </div>
+            <hr class="solid" style="border-top: 2px solid rgb(49, 49, 49);">
+            </hr>
+            <div><img src="https://img.icons8.com/pastel-glyph/16/000000/info--v1.png" />
+                Keep yourself isolated , and take good care of your self. <br> Hope you get well soon 🙏.
+            </div>
+
+            {% endif %}
+
+            {% if result_data == 'NORMAL' %}
+            <div class="card col-sm" style="background-color: rgba(118, 207, 106, 0.87);">
+                Healthy
+            </div>
+
+            <hr class="solid" style="border-top: 2px solid rgb(49, 49, 49);">
+            </hr>
+            <div><img src="https://img.icons8.com/pastel-glyph/16/000000/info--v1.png" />
+                Keep yourself protected , and take proper measure as per WHO guidelines.
+            </div>
+
+
+            {% endif %}
+
+            {% if result_data == 'PNEUMONIA' %}
+            <div class="card col-sm" style="background-color: rgba(214, 164, 124, 0.87);"> Pneumonia</div>
+
+            <hr class="solid" style="border-top: 2px solid rgb(49, 49, 49);">
+            </hr>
+            <div><img src="https://img.icons8.com/pastel-glyph/16/000000/info--v1.png" />
+                Keep yourself protected ,Your lungs have got infected, and you may have COVID-19 in future if you not
+                took care of yourself, so go for regular
+                checkup and take proper measure as per WHO guidelines.
+            </div>
+            {% endif %}
+
+
+
+        </div>
+    </div>
+</div>
+
+<form action="/go_back" method="POST">
+    <button class="btn btn-outline-secondary " type="submit" id="inputGroupFileAddon04" data-bs-toggle="popover"
+        title="go to home page" data-bs-content="go to home">Home</button>
+</form>
+
+</div>
+
+{% endblock body %}
+
+{% block belowBodyTags %}
+<link href="{{ url_for('static', filename='css/design.css' ) }}" rel="stylesheet">
+
+{% endblock belowBodyTags %}
